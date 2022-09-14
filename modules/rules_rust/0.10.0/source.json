@@ -1,0 +1,8 @@
+{
+    "integrity": "sha256-DMfms55JJxC4GeANSPIhCuYmtxejq5bgSMQ6tX5h0gQ=",
+    "patch_strip": 1,
+    "patches": {
+        "module.patch": "sha256-g3+zmGs0YT2HKOVevZpN0Jet89Ylw90Cp9XsIAY8QqU="
+    },
+    "url": "https://github.com/bazelbuild/rules_rust/releases/download/0.10.0/rules_rust-v0.10.0.tar.gz"
+}

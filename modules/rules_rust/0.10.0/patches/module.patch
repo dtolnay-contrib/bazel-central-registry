@@ -1,0 +1,21 @@
+commit 6c0a2c8eb9f0bc522787c4bfaa5794ad0e3bdb07
+Author: Yun Peng <pcloudy@google.com>
+Date:   Wed Oct 6 18:09:19 2021 +0200
+
+    Modularize rules_rust
+
+diff --git a/MODULE.bazel b/MODULE.bazel
+new file mode 100644
+index 0000000..be5b13d
+--- /dev/null
++++ b/MODULE.bazel
+@@ -0,0 +1,8 @@
++module(
++    name = "rules_rust",
++    version = "0.10.0",
++    compatibility_level = 0,
++)
++
++bazel_dep(name = "bazel_skylib", version = "1.2.0")
++bazel_dep(name = "platforms", version = "0.0.5")
++bazel_dep(name = "rules_cc", version = "0.0.1")
